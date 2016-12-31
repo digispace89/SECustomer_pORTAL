@@ -1,0 +1,118 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.se</groupId>
+	<artifactId>SEWebApp</artifactId>
+	<packaging>war</packaging>
+	<version>0.0.1-SNAPSHOT</version>
+	<name>SEWebApp Maven Webapp</name>
+	<url>http://maven.apache.org</url>
+
+
+	<dependencies>
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-core</artifactId>
+			<version>4.3.6.Final</version>
+		</dependency>
+
+	<!-- <dependency> <groupId>mysql</groupId> <artifactId>mysql-connector-java</artifactId> 
+		<version>5.1.6</version> </dependency> -->
+		<dependency>
+			<groupId>org.javassist</groupId>
+			<artifactId>javassist</artifactId>
+			<version>3.18.0-GA</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.activation/activation -->
+		<dependency>
+			<groupId>javax.activation</groupId>
+			<artifactId>activation</artifactId>
+			<version>1.1.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/javax.mail/mail -->
+		<dependency>
+			<groupId>javax.mail</groupId>
+			<artifactId>mail</artifactId>
+			<version>1.4.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-server -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-server</artifactId>
+			<version>1.19.3</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-json -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-json</artifactId>
+			<version>1.19</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-servlet -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-servlet</artifactId>
+			<version>1.19.3</version>
+		</dependency>
+
+		<!-- https://mvnrepository.com/artifact/com.sun.jersey/jersey-core -->
+		<dependency>
+			<groupId>com.sun.jersey</groupId>
+			<artifactId>jersey-core</artifactId>
+			<version>1.19.3</version>
+		</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.owlike/genson -->
+<dependency>
+    <groupId>com.owlike</groupId>
+    <artifactId>genson</artifactId>
+    <version>1.4</version>
+</dependency>
+<dependency>
+	<groupId>org.codehaus.jackson</groupId>
+	<artifactId>jackson-mapper-asl</artifactId>
+	<version>1.9.13</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/mssql-jdbc -->
+<dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>mssql-jdbc</artifactId>
+    <version>6.1.0.jre7</version>
+</dependency>
+
+<!-- https://mvnrepository.com/artifact/com.microsoft.sqlserver/sqljdbc4 -->
+<!-- <dependency>
+    <groupId>com.microsoft.sqlserver</groupId>
+    <artifactId>sqljdbc4</artifactId>
+    <version>4.0</version>
+</dependency>
+ -->
+	</dependencies>
+	<build>
+		<pluginManagement>
+			<plugins>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-compiler-plugin</artifactId>
+					<version>3.2</version>
+					<configuration>
+						<source>1.7</source>
+						<target>1.7</target>
+					</configuration>
+				</plugin>
+				<plugin>
+					<groupId>org.apache.maven.plugins</groupId>
+					<artifactId>maven-war-plugin</artifactId>
+					<version>2.4</version>
+					<configuration>
+						<warSourceDirectory>src/main/webapp</warSourceDirectory>
+						<warName>SEWebApp</warName>
+						<failOnMissingWebXml>false</failOnMissingWebXml>
+					</configuration>
+				</plugin>
+
+			</plugins>
+		</pluginManagement>
+		<finalName>SEWebApp</finalName>
+	</build>
+</project>
